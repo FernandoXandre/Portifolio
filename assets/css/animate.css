@@ -1,0 +1,21 @@
+@keyframes titleFooter {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+
+@keyframes translateCoffee {
+    from {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}

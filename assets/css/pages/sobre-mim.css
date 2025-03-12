@@ -1,0 +1,49 @@
+main {
+    .main {
+        .section-about {
+            font-size: var(--fz_content);
+
+            .center-container {
+                position: relative;
+                padding: 50px 0;
+                width: 100%;
+                /* background-color: green; */
+
+                .description {
+                    margin: auto;
+                    text-align: justify;
+                    /* width: 500px; */
+                }
+            }
+
+            .topics {
+                .topic {
+                    padding: 50px 0;
+                    .title {
+                        font-size: var(--subTitle);
+                        color: var(--colorFont_opacity);
+                        padding-bottom: 30px;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    .title:hover {
+                        color: var(--btnColor);
+                    }
+                    .description {
+                        position: relative;
+                        padding: 30px 0;
+                    }
+
+                    .description::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 50px;
+                        background-color: var(--colorFont_opacity);
+                    }
+                }
+            }
+        }
+    }
+}

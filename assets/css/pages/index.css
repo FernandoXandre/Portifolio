@@ -1,0 +1,131 @@
+main {
+    .main {
+        .coffee-container {
+            animation: translateCoffee 2s ease-in-out;
+            animation-range: cover 0% cover 50%;
+            display: flex;
+            position: absolute;
+            bottom: 13px;
+            right: 0;
+            align-items: end;
+            width: 150px;
+
+            .coffee-image,
+            .coffee-content {
+                flex: 1;
+            }
+            .coffee-content {
+                font-size: 13px;
+                opacity: 0.4;
+            }
+            .coffee-image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    /* Inicio seção sobre mim */
+    .about {
+        padding: 35px;
+        flex-direction: column;
+        display: flex;
+
+        /* Container de conteudo e linguagens */
+        .about-container {
+            padding: 40px;
+            align-items: center;
+            display: flex;
+            width: var(--widthDefault);
+            margin: auto;
+
+            /* Div dos conteudo */
+            .content {
+                flex: 1;
+
+                h3 {
+                    font-size: var(--subTitle);
+                }
+                p {
+                    width: 400px;
+                    font-size: 23px;
+                    text-align: justify;
+                }
+            }
+
+            /* Div das linguagens */
+            .languages {
+                flex: 1;
+
+                h3 {
+                    font-size: var(--subTitle);
+                }
+
+                .sliders {
+                    display: flex;
+                    align-items: center;
+                    height: 100px;
+                    width: 100%;
+
+                    .sliders-container {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        .slide {
+                            width: 70px;
+
+                            img {
+                                aspect-ratio: 1/1;
+                                object-fit: scale-down;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Div do botão */
+        .btn-about {
+            border-radius: 17px;
+            padding: 15px 40px;
+            margin: auto;
+            background-color: var(--colorBackGround_Tip);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .btn-about:hover {
+            background-color: var(--btnColor);
+        }
+    }
+    /* Fim seção sobre mim */
+
+    /* Inicio seção projects */
+    .projects {
+        /* position: relative; */
+        height: 100vh;
+
+        .projects-container {
+            display: flex;
+            margin: auto;
+            height: inherit;
+            width: var(--widthDefault);
+
+            .projects-description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: inherit;
+                flex: 1;
+            }
+
+            .projects-images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+            }
+        }
+    }
+}
