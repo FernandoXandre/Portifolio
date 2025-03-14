@@ -33,7 +33,7 @@ main {
 
         /* Container de conteudo e linguagens */
         .about-container {
-            padding: 40px;
+            padding: 40px 0;
             align-items: center;
             display: flex;
             width: var(--widthDefault);
@@ -43,7 +43,7 @@ main {
             .content {
                 flex: 1;
 
-                h3 {
+                .title {
                     font-size: var(--subTitle);
                 }
                 p {
@@ -57,7 +57,7 @@ main {
             .languages {
                 flex: 1;
 
-                h3 {
+                .title {
                     font-size: var(--subTitle);
                 }
 

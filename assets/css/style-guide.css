@@ -13,6 +13,7 @@
     --colorBackGround_Quite: black;
     --colorBackGround_Tip: #1c1d20; /* RGB 29,28,32*/
     --widthDefault: 1040px;
+    --fzTitle_version: 15px;
     --fz_content: 20px;
     --fz_banner: 73px;
     --subTitle: 24px;
@@ -42,9 +43,11 @@ footer {
     display: flex;
     margin: auto;
     font-size: var(--subTitle);
+
     width: var(--widthDefault);
 
     .title {
+        font-weight: 500;
         flex: 1;
     }
 }
@@ -82,7 +85,6 @@ footer {
         height: 200px;
         width: 100%;
         display: inline-block;
-        background-color: #000;
     }
 }
 
@@ -160,6 +162,7 @@ header {
 main {
     .main {
         width: max(var(--widthDefault));
+        /* height: min(100dvh); */
         margin: auto;
         overflow: hidden;
         position: relative;
@@ -277,11 +280,13 @@ footer {
             }
         }
     }
+
     .version {
         padding: 0 50px 30px;
         width: inherit;
 
         .infoTitle {
+            font-size: var(--fzTitle_version);
             margin: 0;
             width: 100%;
             margin-bottom: 10px;
